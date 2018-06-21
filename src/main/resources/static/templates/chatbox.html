@@ -1,0 +1,37 @@
+
+  <div class="container-fluid">
+    <div class="side-bar col-md-3 bg-black">
+          <div class="side-header">
+              <h2>CHAT
+              <button class="btn btn-dark"  data-toggle="modal" data-target="#myModal">+</button>
+              </h2>
+
+
+
+          </div>
+          <div class="user-list">
+            <div ng-repeat="users in chatList">
+              <div class="user col-md-12 " ng-class="getSelectedClass(users.chatTitle)"  ng-click="setCurrentChat(users.chatTitle)">
+                    <div class="username col-md-12">
+                      <h3>{{users.chatTitle}}</h3 >
+                    </div>
+                    <div class="last-message col-md-12  q">{{users.chatList[users.chatList.length-1].message}}</div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="chat-box col-md-9 bg-black">
+        <div class="chat-header col-md-12"></div>
+        <div class="chat-body col-md-8 col-md-offset-2">
+          <div class="chat-history col-md-offset-1" id="buttom">
+              <div class="chats"  ng-repeat="message in messages track by $index">
+                      <p ng-class="getClass(message.sender)" class="messages">{{message.message}}</p>
+              </div>
+          </div>
+          <div class="chat-input col-md-10 col-md-offset-1">
+              <input type="text" class="chat-box col-md-10" rows="4" placeholder="please type here" ng-keypress="send($event)" ng-model="chatInput" ng-show="receiver" ></textarea>
+          </div>
+        </div>
+    </div>
+    <div ng-include="'templates/modal.html'"></div>
+  </div>

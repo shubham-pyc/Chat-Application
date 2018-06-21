@@ -1,0 +1,188 @@
+
+        .bs-example{
+            margin: 20px;
+        }
+    #footer{
+        position: fixed;
+        bottom: 0;
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        background: #ccc;
+    }
+
+    form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #212121;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+
+}
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+.cancelbtn,.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+.bg-black{
+  height:1000px !important;
+}
+.side-bar{
+  background: #212121;
+  padding-right:0px;
+}
+.side-bar input{
+  color:black;
+}
+.chat-box{
+  background:#424242;
+}
+.chat-body{
+
+  height:800px;
+
+}
+.chat-header{
+  min-height: 100px;
+
+}
+.user-list .user{
+
+  color:white;
+  min-height: 100px;
+  margin-bottom: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.user:hover{
+  pointer:cursor;
+  background: #424142
+}
+.side-header{
+  height:100px;
+  color:white;
+}
+.side-header h2{
+  margin:10px;
+  color:white;
+}
+.selected{
+  background:#424242;
+}
+.btn-dark{
+  background:#424242 !important;
+  float:right;
+  margin:0px;
+}
+.chat-input{
+  position: absolute;
+  width: 100%;
+  top:85%;
+}
+.chat-history{
+
+}
+.chat-input input{
+  background: #212121;
+  border:none;
+  color:white;
+
+
+  border-radius: 8px;
+}
+.chats{
+  min-height: 90px;
+  background: #212121;
+  margin-bottom:10px;
+  border-radius: 8px;
+  color:white;
+  padding: 30px;
+  font-size: 22px;
+  overflow: auto;
+
+}
+.chat-history{
+  height:600px;
+  overflow-y: scroll;
+}
+.sender{
+  float: right;
+  clear: both;
+}
+.messages{
+  word-break: break-all;
+}
+.last-message{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}

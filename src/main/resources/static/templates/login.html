@@ -1,0 +1,22 @@
+
+<div class="login" ng-controller="loginController">
+    <h2>Login Form</h2>
+
+<form  class="row">
+  <div class="col-md-12">
+    <label class="col-md-12"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required class="col-md-12" ng-model="username">
+
+    <label  class="col-md-12"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required class="col-md-12" ng-model="password">
+
+    <button class="col-md-12 selected"type="submit" ng-click="login()">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="col-md-12" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Sign Up</button>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+  </div>
+</form>
+</div>

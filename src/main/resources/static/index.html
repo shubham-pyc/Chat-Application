@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>My First Website</title>
+
+    <meta name="author" content="your name" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+    <script src="js/lib/angular.js"></script>
+    <script src="js/lib/angular-route.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <!-- controller js -->
+    <script src="js/controllers/homecontroller.js"></script>
+    <script src="js/controllers/logincontroller.js"></script>
+    <script src="js/controllers/chatcontroller.js"></script>
+
+    <!-- routing js -->
+    <script src="js/routing0.js"></script>
+
+
+    <!-- services js -->
+
+    <script src="js/services/chat.js"></script>
+    <script src="js/services/server.js"></script>
+    <script src="js/services/chatlistbuilder.js"></script>
+    <script src="js/services/repository.js"></script>
+
+
+    <!-- directives -->
+    <script src="js/directive/scrolldown.js"></script>
+
+
+
+
+
+
+
+
+</head>
+
+<body ng-app="myapp">
+
+<div class="container"  id="container" ng-view >
+</div>
+
+</body>
+</html>
